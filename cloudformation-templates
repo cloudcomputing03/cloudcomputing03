@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudFormation Templates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background: #2d89ef;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .template {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .template h2 {
+      margin-top: 0;
+      color: #2d89ef;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .download {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      color: white;
+      background: #2d89ef;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .download:hover {
+      background: #1c5db0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CloudFormation Templates Collection</h1>
+    <p>Your go-to resource for AWS infrastructure templates</p>
+  </header>
+  <div class="container">
+    <!-- Template 1 -->
+    <div class="template">
+      <h2>Basic EC2 and S3 Setup</h2>
+      <p>This template creates an EC2 instance, a Security Group, and an S3 bucket.</p>
+      <pre>
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  MyBucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: "my-cloudformation-bucket"
+  MySecurityGroup:
+    Type: "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription: "Allow SSH and HTTP access"
+      SecurityGroupIngress:
+        - IpProtocol: "tcp"
+          FromPort: "22"
+          ToPort: "22"
+          CidrIp: "0.0.0.0/0"
+        - IpProtocol: "tcp"
+          FromPort: "80"
+          ToPort: "80"
+          CidrIp: "0.0.0.0/0"
+  MyInstance:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      InstanceType: "t2.micro"
+      SecurityGroups:
+        - !Ref MySecurityGroup
+      ImageId: "ami-0c02fb55956c7d316"
+      KeyName: "my-key-pair"
+      Tags:
+        - Key: "Name"
+          Value: "MyInstance"
+      </pre>
+      <a class="download" href="basic-ec2-s3-template.yaml" download>Download Template</a>
+    </div>
+
+    <!-- Template 2 -->
+    <div class="template">
+      <h2>High Availability VPC</h2>
+      <p>This template creates a VPC with subnets across multiple availability zones for high availability.</p>
+      <pre>
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  MyVPC:
+    Type: "AWS::EC2::VPC"
+    Properties:
+      CidrBlock: "10.0.0.0/16"
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: "Name"
+          Value: "MyVPC"
+  PublicSubnet1:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      CidrBlock: "10.0.1.0/24"
+      VpcId: !Ref MyVPC
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: "us-east-1a"
+  PublicSubnet2:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      CidrBlock: "10.0.2.0/24"
+      VpcId: !Ref MyVPC
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: "us-east-1b"
+      </pre>
+      <a class="download" href="high-availability-vpc-template.yaml" download>Download Template</a>
+    </div>
+  </div>
+</body>
+</html>
