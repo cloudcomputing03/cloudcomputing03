@@ -1,7 +1,6 @@
 <html>
 <div align="center">
-  <img src="[https://user-images.githubusercontent.com/your-profile-image](https://avatars.githubusercontent.com/u/190732951?s=400&u=0ee16acf4540981da8ae81b3ea45ad9a0822cf62&v=4)" alt="Cloud Computing" width="200">
-  <h1>🌩️ CloudComputing03 🌐</h1>
+    <h1>🌩️ CloudComputing03 🌐</h1>
   <p>
     <b>🚀 Innovating in Cloud Technologies | Empowering Learners 🌟</b>
   </p>
