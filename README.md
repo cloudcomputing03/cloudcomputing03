@@ -64,10 +64,9 @@ Here are some of my most exciting repositories:
 
 ## 🤝 Connect with Me
 
-- 🌐 **Website**: [cloudcomputing03.dev](https://cloudcomputing03.dev)
-- 💼 **LinkedIn**: [linkedin.com/in/cloudcomputing03](https://linkedin.com/in/cloudcomputing03)
-- 🐦 **Twitter**: [@cloudcomputing03](https://twitter.com/cloudcomputing03)
-
+- 🌐 **Website**: https://dev.to/cloudpost03 
+- 💼 **LinkedIn**: 
+- 🐦 **Twitter**: 
 ---
 
 <div align="center">
