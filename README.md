@@ -64,11 +64,11 @@ Here are some of my most exciting repositories:
 
 ## 🤝 Connect with Me
 
-**Website**: https://dev.to/cloudpost03 
-**LinkedIn**:https://www.linkedin.com/in/pravinkr011
-**Medium**: https://medium.com/@devopsbypravin
-**Hashnode**:https://hashnode.com/@devopsbypravin
-**GitLab**: https://gitlab.com/pravin.kr11
+- **Website**: https://dev.to/cloudpost03 
+- **LinkedIn**:https://www.linkedin.com/in/pravinkr011
+- **Medium**: https://medium.com/@devopsbypravin
+- **Hashnode**:https://hashnode.com/@devopsbypravin
+- **GitLab**: https://gitlab.com/pravin.kr11
 
 
 <div align="center">
