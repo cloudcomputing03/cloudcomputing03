@@ -1,6 +1,6 @@
 <html>
 <div align="center">
-    <h1>🌩️ CloudComputing03 🌐</h1>
+    <h1>🌩️ PRAVIN KUMAR 🌐</h1>
   <p>
     <b>🚀 Innovating in Cloud Technologies | Empowering Learners 🌟</b>
   </p>
@@ -16,7 +16,7 @@
 
 ## 🌟 About Me
 
-👋 Hello! I’m **CloudComputing03**, a tech enthusiast with a focus on **Cloud Computing** and **DevOps**. My passion lies in:
+👋 Hello! I’m **PRAVIN KUMAR**, a tech enthusiast with a focus on **Cloud Computing** and **DevOps**. My passion lies in:
 
 - Building scalable, resilient cloud solutions.
 - Teaching and creating free learning platforms for cloud enthusiasts.
@@ -64,10 +64,12 @@ Here are some of my most exciting repositories:
 
 ## 🤝 Connect with Me
 
-- 🌐 **Website**: https://dev.to/cloudpost03 
-- 💼 **LinkedIn**: 
-- 🐦 **Twitter**: 
----
+**Website**: https://dev.to/cloudpost03 
+**LinkedIn**:https://www.linkedin.com/in/pravinkr011
+**Medium**: https://medium.com/@devopsbypravin
+**Hashnode**:https://hashnode.com/@devopsbypravin
+**GitLab**: https://gitlab.com/pravin.kr11
+
 
 <div align="center">
   <h3>💡 Let's build the future of cloud computing together! 🚀</h3>
